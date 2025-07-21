@@ -1,0 +1,49 @@
+.navbar {
+  position: absolute;
+  top: 30px; /* adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  background-color: #e0b376; /* or white if needed */
+  border-radius: 30px;
+  padding: 12px 35px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  width: fit-content;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 35px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  align-items: center;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #111;
+  transition: all 0.3s ease;
+}
+
+.orange-link:hover {
+  color: orange;
+}
+
+.green-link:hover {
+  color: rgb(9, 235, 9);
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.active {
+  text-decoration: underline;
+  color: white !important;
+}

@@ -1,0 +1,168 @@
+/* Card.css */
+
+/* Container for the card slider */
+#Card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: url('/images/bluehenn.png') center center / cover no-repeat;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 20px;
+  position: relative;
+}
+
+  
+  /* Text container styles */
+  .textt-container {
+  text-align: center;
+  margin-top: 0px;   /* ✅ Add this line to reduce space above */
+  margin-bottom: 30px;
+}
+
+.textt-container h2 {
+  color: whitesmoke;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif; /* ✅ Set Montserrat */
+  font-size: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+  
+  /* Main slider container */
+  #main-slider-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 400px;
+  }
+  
+  /* Slider */
+  #slider {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+  }
+  
+  #slider::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .slider-card{
+    width: 420px;
+    height: 400px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 60px;
+    margin-right: 100px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.155);
+    cursor: pointer;
+}
+  
+  .card-back {
+    width: 420px;
+    height: 400px;
+    background: rgb(243, 236, 36);
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 12%);
+  }
+  
+  .slider-card-title, .slider-card-description {
+    margin: 5px 0px 5px 10px;
+  }
+  
+  .slider-card-title {
+    font-weight: 500;
+    margin-top: 10px;
+  }
+  
+  .slider-card-description {
+    opacity: 0.5;
+    font-size: 13px;  
+  }
+  
+  .slider-card-image {
+    width: 100%;
+    height: 220px;
+    background-color: rgb(240 240 240 / 80%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+.slider-icon.left, .slider-icon.right {
+  background: white;
+  color: #00539f; /* Initial icon color (UD blue) */
+  border-radius: 100%;
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%);
+  opacity: 0.6;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 1; /* Ensure it's above content */
+}
+
+.slider-icon.left {
+  left: -25px; /* Adjust as needed */
+}
+
+.slider-icon.right {
+  right: -25px; /* Adjust as needed */
+}
+
+.slider-icon.left:hover,
+.slider-icon.right:hover {
+  background: #ffffff;  /* Keep white */
+  color: orange;        /* Chevron icon becomes orange */
+  opacity: 1;
+  transform: translateY(-50%) scale(1.1);
+}
+
+  
+  .slider-card-content {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slider-card-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .slider-card-button:hover {
+    background-color: darkorange;
+    transform: scale(1.05);
+  }
+  

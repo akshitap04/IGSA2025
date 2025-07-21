@@ -1,0 +1,140 @@
+/* === IGSA Navbar Styling === */
+.header-navbar {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  width: fit-content;
+}
+
+.nav-menu {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 30px;
+  padding: 12px 35px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  align-items: center;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #111;
+  transition: all 0.3s ease;
+}
+
+.orange:hover {
+  color: orange;
+}
+
+.green:hover {
+  color: rgb(73, 214, 73);
+}
+
+.join-btn {
+  border: 2px solid #111;
+  border-radius: 25px;
+  padding: 6px 18px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.join-btn:hover {
+  background-color: #111;
+  color: #fff;
+}
+/* === Banner Dark Background + White Box === */
+.about-section {
+  background-color: #f6f3ed; /* dark grey */
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-container {
+  background-color: white;
+  max-width: 1000px;
+  padding: 50px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(216, 139, 23, 0.601);
+  text-align: center;
+}
+
+.about-heading {
+  font-size: 36px;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.divider {
+  width: 80px;
+  height: 4px;
+  background-color: #555;
+  margin: 0 auto 30px auto;
+  border-radius: 2px;
+}
+
+.about-content {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* === Footer Styling === */
+.footer-section {
+  background-color: #222;
+  color: rgb(190, 180, 180);
+  text-align: center;
+  padding: 15px 20px;
+}
+
+.footer-section h2 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  margin-bottom: 30px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 20px;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #f06000; /* hover color */
+}
+
+.footer-bottom-bar {
+  background-color: #111;
+  padding: 5px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.footer-description {
+  background-color: #1f2329;
+  color: #999;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-description a {
+  color: #ccc;
+  text-decoration: underline;
+}
